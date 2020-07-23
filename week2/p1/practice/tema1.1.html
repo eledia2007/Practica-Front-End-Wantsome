@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Week2-Tema1.1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+   <form>
+        <label>Nume</label><br>
+            <input type="text" name="nume" required value="Ana" ><br><br>
+        <label>Prenume</label><br>
+            <input type="text" name="prenume" required value="Airinei"><br><br>
+        <label>Sex</label><br>
+            <input type="radio" name="sex" value="Masculin" checked/>Masculin
+            <input type="radio" name="sex" value="Feminin"/>Feminin 
+            <input type="radio" name="sex" value="Altul"/>Altul
+        <br><br>
+        <label>Varsta</label>
+            <input type="number" min="18" max="85" value="18"/><br><br>
+        <label>Tara</label>
+            <select name="tara">
+                <option value="Romania">Romania</option>
+                <option value="Republica Moldova">Republica Moldova</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Ungaria">Ungaria</option>
+            </select>
+            <br><br>
+        <label>Oras</label>
+            <select name="oras">
+                <option value="Bucuresti">Bucuresti</option>
+                <option value="Chisinau">Chisinau</option>
+                <option value="Budapesta">Budapesta</option>
+                <option value="Sofia">Sofia</option>
+            </select> 
+            <br><br>   
+        <label>Adresa</label><br>
+            <textarea name="Adresa" rows="3" cols="30">Adresa</textarea><br><br>
+        <label>Cod Postal</label> 
+            <input type="text" name="codpostal"/>
+            <br><br>
+        <label>E-mail</label>
+            <input type="email" name="email" required placeholder="ana@gmail.com"/>
+            <br><br>
+        <label>Mesaj</label><br>
+            <textarea name="mesaj" rows="8" cols="30">Mesaj</textarea><br><br>
+        <label>Atasare CV</label>
+            <input type="file" name="cv"/><br><br>
+            <input type="submit" value="Trimitere"/>
+            <input type="reset" value="Resetare"/>
+        
+    </form> 
+</body>
+
+</html>
