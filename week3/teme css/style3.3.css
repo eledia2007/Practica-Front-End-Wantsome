@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(153, 248, 182);
+}
+.form {
+    background-color: rgb(7, 138, 88);
+    border:2px;
+    border-radius: 10px;
+    padding-left:100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 250px;
+    margin: auto;
+}
+label { 
+    font-family: 'Franklin Gothic Medium';
+    color: mintcream;
+}
+input[type="submit"], input[type="reset"]{
+  border-radius: 5px;
+ 
+  background-color: rgb(153, 248, 182);;
+  border-width: 1px;
+  }
+input[type="number"]:hover , input[type="email"]:hover, input[type="text"]:hover{
+    background-color: rgb(153, 248, 182);
+    border-width: 2px;
+    cursor: pointer;
+}
+textarea:hover, select:hover {
+    background-color:rgb(153, 248, 182);
+    border-width: 2px;
+    cursor: pointer;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    background-color: rgb(3, 177, 75);
+    border: rgb(6, 48, 18) 2px solid;
+}

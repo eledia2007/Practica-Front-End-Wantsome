@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Week2-Tema2.2</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="style3.2.css">
+</head>
+
+<body>
+     <h1>Travel reservation form</h1>
+     <h3>*denotes mandotory</h3>
+
+     <form>
+          <label>Full name*</label>
+          <br>
+          <input type="text" name="fullname" placeholder="FirstName LastName" required />
+          <br><br>
+          <label>Email address*</label>
+          <br>
+          <input type="email" name="email" placeholder="EMAIL_ADRESS" required />
+          <br><br>
+          <label>Select Tour Package* :</label>
+          <br>
+          <div class="tourselect">
+               <select  name="tourpackage" required>
+                    <option value="Independent Tours" selected>Independent Tours</option>
+                    <option value="Escorted Tours">Escorted Tours</option>
+                    <option value="Hosted Tours">Hosted Tours</option>
+                    <option value="Incentives Travel/Tours">Incentives Travel/Tours</option>
+                    <option value="Freedom Tours">Freedom Tours</option>
+               </select>
+          </div>
+          <br>
+          <label>Arrival date*:</label>
+          <br>
+          <input type="text" placeholder="m/d/y" required />
+          <br><br>
+          <label>Number of persons* :</label>
+          <br>
+          <input type="text" placeholder="UNKNOWN_TYPE" required />
+          <br><br>
+          <label>What would you want to avail?*</label>
+          <br>
+          <div class="avail">
+               Boarding<input type="checkbox" name="Boarding" value="Boarding" checked /><br>
+               Fooding<input type="checkbox" name="Fooding" value="Fooding" /><br>
+               Sight seeing<input type="checkbox" name="Sightseeing" value="Sight seeing" />
+          </div>
+          <br>
+          <label>Discount Coupon Code:</label><br>
+          <input type="text" placeholder="UNKNOWN_TYPE" />
+          <br>
+          <label>Terms and conditions*</label><br>
+          <div class="terms">
+               <input type="radio" name="agree" value="I agree" checked/>I agree
+               <input type="radio" name="agree" value="I disagree" />I disagree
+          </div>
+          <br>
+          <input type="submit" value="Complete reservation" />
+
+     </form>
+</body>
+
+</html>
