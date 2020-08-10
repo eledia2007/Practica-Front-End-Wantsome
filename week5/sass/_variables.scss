@@ -1,0 +1,22 @@
+$title-color:red;
+
+$radius: 10px;
+$button-border:2px;
+$border-color: lightgrey;
+$color:lightblue;
+
+$site-width: 1600px;
+
+.title {
+    color: $title-color;
+}
+
+.myBtn {
+    border-radius: $radius;
+    border:solid $button-border $border-color;
+    background-color:$color;
+}
+
+.container{
+    max-width: $site-width;
+}

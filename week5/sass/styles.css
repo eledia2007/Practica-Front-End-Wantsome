@@ -1,0 +1,91 @@
+.title {
+  color: red;
+}
+
+.myBtn {
+  border-radius: 10px;
+  border: solid 2px lightgrey;
+  background-color: lightblue;
+}
+
+.container {
+  max-width: 1600px;
+}
+
+.myList h2 {
+  color: pink;
+  margin: 0px;
+}
+
+.myList ul {
+  margin: 10px;
+  list-style: none;
+  color: red;
+}
+
+.myList li:hover {
+  color: lime;
+}
+
+.myList .clasaA {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+.subscribe-btn {
+  background-color: lightgreen;
+  font-weight: bold;
+  border: solid 1px black;
+  color: black;
+  padding: 5px 15px;
+}
+
+.subscribe-btn:hover {
+  background-color: white;
+  border-color: lightseagreen;
+}
+
+.menu {
+  background-color: brown;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.menu:hover {
+  background-color: lightgreen;
+}
+
+.product {
+  background-color: green;
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.product:hover {
+  background-color: lightgreen;
+}
+
+.normal, .success, .error {
+  padding: 10px 30px;
+  color: #333;
+  width: 62.5%;
+  border: solid 3px #ccc;
+  text-align: center;
+  margin: 10px;
+}
+
+.success {
+  border-color: limegreen;
+  color: maroon;
+}
+
+.error {
+  border-color: pink;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

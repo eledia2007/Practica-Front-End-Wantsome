@@ -1,0 +1,22 @@
+%shared-message{
+    padding: 10px 30px;
+    color: #333;
+    //width: 500px;
+    width: 600px / 960px * 100%;
+    border: solid 3px #ccc;
+    text-align: center;
+    margin: 10px;
+}
+.normal{
+    @extend %shared-message;
+}
+.success{
+    @extend %shared-message;
+    border-color: limegreen;
+    color: maroon;
+}
+.error {
+    @extend %shared-message;
+    border-color: pink;
+    font-weight: bold;
+}

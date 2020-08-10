@@ -1,0 +1,37 @@
+@mixin form-buttons {
+    background-color: lightgreen;
+    font-weight: bold;
+    border: solid 1px black;
+    color: black;
+    padding: 5px 15px;
+
+    &:hover {
+        background-color: white;
+        border-color: lightseagreen;
+    }
+}
+
+.subscribe-btn {
+    @include form-buttons;
+}
+
+
+@mixin params_buttons($base, $hover, $text) {
+    background-color: $base;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: $text;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $hover;
+
+    }
+
+}
+.menu{
+    @include params_buttons(brown,lightgreen,black )
+}
+.product {
+    @include params_buttons(green,lightgreen,white )
+}

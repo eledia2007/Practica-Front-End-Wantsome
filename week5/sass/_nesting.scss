@@ -1,0 +1,22 @@
+.myList {
+    h2{
+        color: pink;
+        margin: 0px;
+    }
+
+    ul{
+        margin: 10px;
+        list-style:none;
+        color:red;
+    }
+    li{
+        &:hover{
+            color:lime;
+        }
+    }
+    .clasaA {
+        width: 30px;
+        height:30px;
+        background-color: blue;
+    }
+}
