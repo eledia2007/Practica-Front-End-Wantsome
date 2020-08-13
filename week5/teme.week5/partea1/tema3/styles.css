@@ -1,0 +1,112 @@
+* {
+    
+background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+}
+
+.container {
+    min-width: 1200px;
+    height: 1000px;
+    display: grid;
+    grid-gap: 30px;
+    margin: 30px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr; 
+}
+.div1 {
+    background-image: url('https://platedcravings.com/wp-content/uploads/2016/12/Feta-Tomato-Bites-Plated-Cravings-9.jpg');
+    background-clip: content-box;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.div2 {
+    background-image: url('https://www.supermarketperimeter.com/ext/resources/2019/3/ArtisanBread_Lead.jpg?1553785153');
+    background-clip: content-box;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.div3 {
+    background-image: url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/beveragedaily.com/article/2020/03/31/beverage-webinar-today-what-drinks-do-consumers-want/10866454-1-eng-GB/Beverage-webinar-today-What-drinks-do-consumers-want.jpg');
+    background-clip: content-box;
+    background-size: cover;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.div4 {
+    background-image: url('https://www.piatapresei.ro/wp-content/uploads/2019/04/2016_09_29_12990_1475116504._large.jpg');
+    background-clip: content-box;
+    background-size: cover;
+    grid-column: 2/3;
+    grid-row: 2/3;    
+}
+h2 {
+    background: transparent;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    padding: 50px;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 326px;  
+}
+
+@media screen and (max-width:700px) {
+     *{
+        width: 700px;
+     }
+    .container {
+        display:grid;
+        width: 700px;
+        margin: 0%;
+        grid-gap: 20px;
+        background-size: contain;
+    }
+    .div1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+       
+    }
+    .div2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        
+    }
+    .div3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        
+    }
+    .div4 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+       
+    }
+    h2 {
+        padding: 30px;
+        top:136px;
+        font-size: 20px;
+        width: 640px;
+    }
+}
+@media screen and (max-width:500px) {
+    *{
+       width: 500px;
+    }
+   .container {
+       display:grid;
+       width: 500px;
+       margin: 0%;
+       grid-gap: 10px;   
+       background-size: contain;
+   }
+   h2 {
+       padding: 30px;
+       top:147px;
+       font-size: 18px;
+       width: 440px;
+   }
+   
+}

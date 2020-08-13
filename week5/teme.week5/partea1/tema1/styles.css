@@ -1,0 +1,44 @@
+body {
+    background-color: #FFE4B5;
+    margin-top: 0px;
+    margin-left: 0;
+    width: 100%;
+}
+header, footer {
+    height: 70px;
+    background-color: rgb(154, 205, 50);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width:100%
+}  
+.main {
+    display: flex;
+    background-color: rgba(154, 205, 50, 0.7) ;
+    padding: 10px;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.block-left {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-size: cover;
+    background-clip: content-box;
+    
+}
+.block-center {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://image.winudf.com/v2/image1/Z3JlZW5uYXR1cmV3YWxscGFwZXIubXVhbmdyaXRfc2NyZWVuXzZfMTU2Njk5NzM5NV8wNTU/screen-6.jpg?fakeurl=1&type=.jpg);
+    background-size: cover;
+    background-clip: content-box;
+}
+.block-right {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://images.hdqwalls.com/wallpapers/green-valley.jpg);
+    background-size: cover;
+    background-clip: content-box;
+}
