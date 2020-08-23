@@ -51,33 +51,34 @@ var cars = function (marca) {
     switch (marca){
         case 'Fiat': {
             tara = 'Italia';
-            console.log('Masina '+ marca + ' este din ' + tara);}
+            return 'Masina '+ marca + ' este din ' + tara;}
         break;   
         case 'Dacia': {
             tara = 'Romania';
-            console.log('Masina '+ marca + ' este din ' + tara);}
+           return 'Masina '+ marca + ' este din ' + tara;}
         break;  
         case 'Renault': {
             tara = 'Franta';
-            console.log('Masina '+ marca + ' este din ')+ tara;}
+            return 'Masina '+ marca + ' este din '+ tara;}
         break; 
         case 'Hyundai': {
             tara = 'Coreea de Sud';
-            console.log('Masina '+ marca + ' este din '+ tara);}
+            return 'Masina '+ marca + ' este din '+ tara;}
         break; 
         case 'Skoda': {
             tara = 'Cehia';
-            console.log('Masina '+ marca + ' este din ' + tara);}
+            return 'Masina '+ marca + ' este din ' + tara;}
         break; 
         case 'Toyota': {
             tara = 'Japonia';
-            console.log('Masina '+ marca + ' este din '+ tara);}
+            return 'Masina '+ marca + ' este din '+ tara;}
         break; 
-        default: console.log('Marca nu este cunoscuta.');
+        default: return 'Marca nu este cunoscuta.';
 
     }
 }
-cars('Toyota');
+console.log(cars('Toyota'));
+
 
 //----------------------------------------------------------
 
