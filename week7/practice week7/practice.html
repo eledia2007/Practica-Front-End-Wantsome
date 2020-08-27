@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    <script>
+        for (i =0; i<45; i++) {
+  console.log('Valoarea lui i:', i);
+}
+//-------------------------------
+var user = ['Ana', 'Geroge', 'Stan'];
+for (i=0; i<user.length; i++) {
+  console.log(user[i]);
+}
+       
+//-------------------------------
+var userDetails = {
+  name:"Daniel",
+  age:22,
+  sex: "M"
+};
+var userInfo = 'Detaliile utilizatorului sunt:';
+
+for (var key in userDetails){
+  userInfo += userDetails[key] + " , "
+
+}
+console.log(userInfo);
+
+//--------------------------------------------
+var i=0;
+while (i<10){
+  console.log(i);
+  i++;
+}
+//--------------------------------------------
+do {
+  console.log(i);
+  i++;
+}
+while (i<10);
+
+//----------------------------
+var numberList = [7, 9, -2, 1, -13, 40, 24,15];
+for (var i=0; i<numberList.length; i++){
+  console.log(numberList[i]);
+}
+///----------------------
+var numberList = [7, 9, -2, 1, -13, 40, 24,15];
+for (var i=0; i<numberList.length; i++){
+ if (numberList[i]<0){
+   break;
+ }
+  console.log(numberList[i]);
+}
+//----------------------------------
+var numberList = [7, 9, -2, 1, -13, 40, 24,15];
+for (var i=0; i<numberList.length; i++){
+ if (numberList[i]<0){
+   continue;
+ }
+  console.log(numberList[i]);
+}
+//-------------------------------------------
+//nr impare mai mici decat 100
+for (var i=0; i<100; i++){
+  //verificare daca nr este par
+  if(i % 2 === 0){
+    continue;
+  }
+  //daca codul ajunge in acest punct, i este par si il afisez
+  console.log(i + 'este numar impar');
+}
+//------------------------------------------
+///Exercitiul 1
+// 1. Scrieti o functie care accepta ca argument o valoare numerica si afiseaza de atatea ori pe ecran textul: “Sunt la iteratia
+// numarul [index]” - Scrieti codul in doua variante
+//-------------------------------------------
+function countIndex (n) {
+  for (nr=0; nr<n; nr++) {
+    console.log("Sunt la iteratia numarul" + nr );
+  }
+}
+countIndex(3);
+//Sunt la iteratia 0
+//Sunt la iteratia 1
+
+//--varianta 2------------------------------------
+function countIndexV2(n) {
+  var nr = 0;
+  while (nr <= n){
+   console.log("Sunt la iteratia numarul" + nr );
+     nr++;
+  }
+}
+countIndexV2(3);
+//Sunt la iteratia 0
+//Sunt la iteratia 1
+//----------------------------------
+
+//Exercitiul2---------------
+// 2. Scrieti o functie care accepta ca argument un array si afiseaza in consola elementele acestuia prin parcurgerea sa -
+// Scrieti codul in doua variante
+
+function goOverArray (arr){
+  for (var i= 0; i<arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+goOverArray ([1 , 2 ,3, 4]);
+//---varianta 2 -------------------
+function goOverArray2 (arr){
+  var i =0;
+  while (i<arr.length) {
+    console.log(arr[i]);
+    i++;
+  }
+}
+var myArray = [1 , 2, 3 ,4];
+goOverArray2(myArray);
+
+
+//--Exercitiul 3-------------------------------
+// 3. Scrieti o functie care accepta ca argument un obiect si afiseaza in consola elementele acestuia prin parcurgerea sa -
+// scrieti codul in doua variante
+
+function goOverObject (myObj){
+  for (var i=0; i<Object.values(myObj).length; i++){
+    console.log(Object.values(myObj)[i]);
+  }
+}
+var myObj = {
+  name:"Mihai",
+  city:"Paris"
+};
+goOverObject(myObj);
+//-----varianta2-------------------
+function goOverObject (myObj){
+  for (var key in myObj){
+    console.log(myObj[key]);
+  }
+}
+var myObj = {
+  name:"Mihai",
+  city:"Paris"
+};
+goOverObject(myObj);
+//-------------------------------------------------------
+
+//Exercitii
+
+// 0 100 200 300 400............1000
+
+for (i=0; i<=1000; i= i+100){
+  console.log(i);
+}
+
+//------------------------------
+//1 2 4 8 16 32 128 
+var i = 0;
+while  (i<=7){
+  console.log(Math.pow(2,i));
+              i += 1;
+}
+//---------------------------
+// 9 8 7 6 5 4 3 2 1
+for (var i=9; i>=0; i--){
+  console.log(i);
+}
+
+//---------------------------
+// 0 2 4 8 10
+
+for (var i=0; i<=0; i++){
+  if (i % 2 === 1){
+   continue;  
+  }
+  console.log(i);
+}
+//---------------------------
+//functia stream
+// Implementati functia stream. Trebuie sa:
+// ● accepte ca argumente 2 functii: conditionalFn, actionFn.
+// ● apeleaza actionFn pana cand conditionalFn returneaza fals
+// ● nu returneaza nimic
+
+function stream (condition, callBack){
+  while (condition() === true){
+    callBack();
+  }
+}
+
+//varianta la exemplul 2
+function stream (condition, callBack){
+    var counter = 10;
+  while (counter>=0){
+    counter--;
+    console.log('Vreau sa ies la tabla');
+  }
+}
+
+//Implementati functia computeSumOfArrayElements.
+// Trebuie sa:
+// ● accepte ca argument un array format din numere
+// ● returneze suma numerelor din array
+// ● foloseasca instructiunea while
+
+function computerSumOffArray (arr){
+    var sum = 0;
+    var i=0;
+
+    while (i<arr.length){
+        sum = sum +arr[i];
+        i++;
+    }
+    console.log(sum);
+}
+    </script>
+</head>
+
+<body>
+
+    <h1>JAVASCRIPT</h1>
+
+</body>
+
+</html>
