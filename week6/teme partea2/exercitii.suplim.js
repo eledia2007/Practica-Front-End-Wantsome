@@ -78,6 +78,10 @@ var cars = function (marca) {
     }
 }
 console.log(cars('Toyota'));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1dabb987a04a67f33857941ecadc5cbc36bbbfcb
 
 //----------------------------------------------------------
 
