@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    <script>
+        var x = []; //array
+        var object = {}; //object - intre acolade obieste si valoare
+
+        var user = {
+            nume: 'Marius',//nume- proprietate , 'Marius'-valoare
+            varsta: 24,
+            nationalitate: 'romana',
+            hobbies: ['inot', 'fotbal', 'muzica'],
+        };
+
+        console.log(user);
+
+        //Adaugare proprietati
+
+        user.gender = 'male';//adugare proprietati
+        user['job'] = 'developer';//adugare proprietati
+        console.log(user);
+
+        //Stergere proprietati
+
+        delete user.varsta;
+        delete user.hobbies;
+        console.log(user);
+
+        // Accesare proprietati
+
+        var laptop = {
+            culoare: 'alb',
+            specificatii: {
+                procesor: 'Intel Xcore',
+                ssd: true,
+                capacitate: '2T',
+            },
+            greutate: '2kg',
+            display: 'full HD',
+            installedSoftware: true,
+            keyboard: ['en', 'ro', 'es'],
+        };
+
+        console.log(laptop);
+        console.log(laptop.culoare);
+        console.log(laptop.specificatii.procesor);
+        console.log(laptop.display);
+        console.log(laptop.keyboard);
+
+        //functii
+        var animal = {
+            type: 'dog',
+            gender: 'female',
+            saySomething: function () { console.log('Woof') },
+        };
+        animal.saySomething();//printeaza un mesaj pe ecran declarat in functie
+
+        console.log(animal.type);
+
+        //this 
+
+        var user = {
+            name: 'Cristina',
+            age: 22,
+            saySomethingAboutUser: function () {
+                console.log(this.name + ' are ' + this.age);
+            }
+        }
+        user.saySomethingAboutUser();
+
+        //key and values
+
+        var laptop2 = {
+            culoare: 'alb',
+            specificatii: {
+                procesor: 'Intel Xcore',
+                ssd: true,
+                capacitate: '2T',
+            },
+            greutate: '2kg',
+            display: 'full HD',
+            installedSoftware: true,
+            keyboard: ['en', 'ro', 'es'],
+        };
+
+        var objKEys = Object.keys(laptop2);
+        console.log(objKEys); //arata cheile
+
+        var objValues = Object.values(laptop2);
+        console.log(objValues); //arata valorile
+
+        //Object constructors-construire mai multe obiecte
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+        var myCar = new Car('Audi', 'Q6', 2017);
+        console.log(myCar);
+
+        var myNewCar = new Car('Volvo', 'xc60', 2019);
+        console.log(myNewCar);
+
+    </script>
+</head>
+
+<body>
+
+    <h1>JAVASCRIPT</h1>
+
+</body>
+
+</html>

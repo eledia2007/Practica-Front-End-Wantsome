@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    <script>
+        //if - folosit pentru a aexecuta un cod, daca conditia este adevarata;
+        var number = 7;
+        if (number > 2) {
+            console.log('Conditia este adevarat');
+        }
+
+        //else - cand aceeasi conditie nu este indeplinita - false
+
+        var nr = 2;
+        if (nr > 5) {
+            console.log('Conditie indeplinita');
+        } else {
+            console.log('Conditie initiala neindeplinita');
+        }
+
+        //alt exemplu
+        var name = 'Andrei';
+        var user = 'Marius';
+        if (name === user) {
+            console.log('HEllo, ' + user + ', welcome!');
+        } else {
+            console.log('User is not correct');
+        }
+        //exemplu cu array
+        var fructe = ['mere', 'pere'];
+        if (fructe[0] === 'mere') {
+            console.log('Avem mere');
+        } else {
+            console.log('TRebuie sa cumparam mere');
+        }
+
+        //else if - atunci cand if este false, pentru a defini o noua conditie
+
+        var number = 3;
+
+        if (number > 10) {
+            console.log(number + ' este mai mare decat 10');
+        } else if (number > 1) {
+            console.log(number + ' este mai mare decat 1');
+        } else {
+            console.log('NU ma intereseaza ce numar este');
+        }
+
+
+        // switch - pentru a specifica mai multe blocuri de cod alternative in fucntie de condittia care se indeplineste
+
+        var car = 'mazda';
+        switch (car) {
+            case 'mazda': {
+                console.log('Felicitari mazda');
+            }
+                break;
+            case 'audi': {
+                console.log('Felicitari audi');
+            }
+                break;
+            default: {
+                console.log('Nu ai castigat!')
+            }
+        }
+        //exercitiu complex
+
+        var user1 = {
+            name: {
+                first: "John",
+                last: 'Doe',
+            },
+            gender: 'male',
+            title: 'normal',
+            sections: ['Account', 'GEneric'],
+        }
+        var user2 = {
+            name: {
+                first: "Mike",
+                last: 'Doe',
+            },
+            gender: 'male',
+            title: 'ADMIN',
+            sections: ['Dashboard', 'User PRofiles', 'Account', 'GEneric',]
+        }
+        var user3 = {
+            name: {
+                first: "Mike",
+                last: 'Doe',
+            },
+            gender: 'male',
+            title: 'another',
+            sections: ['Dashboard', 'User PRofiles', 'Account', 'GEneric',]
+        }
+        function checkUserPermissions(user) {
+            var firstName = user.name.first;
+            var lastName = user.name.last;
+            var title = user.title;
+            var permissions = user.sections.join(', ');
+
+            switch (title) {
+                case 'normal': {
+                    console.log(firstName + ',' + lastName + ' are titlul ' + title + ' si are permisiunile de ' + permissions);
+                }
+                    break;
+                case 'ADMIN': {
+                    console.log(firstName + ',' + lastName + ' are titlul ' + title + ' si are permisiunile de ' + permissions);
+                }
+                    break;
+
+                default: console.log('Unknown user');
+            }
+        }
+        checkUserPermissions(user1);
+        checkUserPermissions(user2);
+        checkUserPermissions(user3);
+
+        // Exercitiul1 - din curs Practice
+
+        function greatestNumbersBetween(a, b) {
+            if (a > b) {
+                console.log('NUmarul mai mare dintre' + a + 'si' + b + ' este' + a);
+                return a;
+            } else if (a === b) {
+                console.log('Numerele sunt egale');
+            } else
+                console.log('NUmarul mai mare dintre' + a + 'si' + b + ' este' + b);
+            return b;
+        }
+
+        greatestNumbersBetween(5, 10);
+        greatestNumbersBetween(5, 5);//arata 5 pentru ca prima conditie nu este indeplinita si arata b
+        greatestNumbersBetween(-19, 304);
+        greatestNumbersBetween(900, 2);
+
+        //Exercitiul 2
+      var helloWorldLAng = function (lang){
+        switch(lang){
+            case 'en': {
+                console.log('Hello World');
+            }
+            break;
+            case 'es': {
+                console.log('Hola mundo');
+            }
+            break;
+            case 'de': {
+                console.log('Hallo Welt');
+            } 
+            break;
+
+            default: console.log('HEllo World');
+        }
+      }
+      helloWorldLAng('en');
+      helloWorldLAng('es');
+      helloWorldLAng('de');
+      helloWorldLAng('ro'); //afiseaza valoare default
+
+    </script>
+</head>
+
+<body>
+
+    <h1>JAVASCRIPT</h1>
+
+</body>
+
+</html>

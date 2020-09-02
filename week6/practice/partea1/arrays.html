@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    <script>
+
+        //length+position
+
+        var fructe = ['clementine','kiwi','ananas','mango'];
+        var fruct = ['para'];
+        console.log(fructe.length);
+        console.log(fructe[0]);
+        console.log(fructe[2]);
+
+      //concat
+      var masini = ['Mustang','Aro','BMW'];
+      var masiniSport = ['Tigra ', 'Porsche'];
+
+      var allCArs = masini.concat(masiniSport);
+      console.log(allCArs);
+
+        //isArray
+      console.log(Array.isArray(masini));
+      var animal = 'pisica';
+
+      console.log(Array.isArray(animal));
+
+        // join (transforma in insiruire de string-uri)
+       var stringDeFructe = fructe.join(' - ') ;
+       console.log(stringDeFructe);
+
+       //push
+
+       var nume = ['Ion','Radu','Andreea'];
+
+       nume.push('Raluca');
+       console.log(nume);
+       
+       //pop
+
+       nume.pop(); //scoate ultimul element
+       console.log(nume);
+
+       //shift
+
+       nume.shift();
+       console.log(nume);//scoate primul element
+
+       //unshift
+
+       nume.unshift('Emilian', 'Emilia');
+       console.log(nume); //adauga ca prim element
+
+       //reverse
+
+       nume.reverse();
+       console.log(nume); //inverseaza elementele 
+
+       //sort 
+
+       nume.sort();
+       console.log(nume); //pune in ordine alfabetica
+
+
+       var numbers = [1, 5, -7, 3, 27, 22]; 
+        numbers.sort();
+        console.log(numbers);
+        //ia primul index dintr-un numar
+
+        numbers.sort(function(a, b) {
+            return a-b; //in ordine crescatoare
+        })
+        console.log(numbers);
+
+
+        numbers.sort(function(a, b) {
+            return b-a;//in ordine descrescatoare
+        })
+        console.log(numbers);
+
+        //splice 
+        var orase = ['IAsi', 'Bucuresti','Timisoara','Cluj','BRasov', 'Arad', 'Sibiu'];
+
+        orase.splice(1, 2, 'Constanta');
+        console.log(orase);
+
+        orase.splice(1, orase.length, 'Constanta', 'Galati');
+        console.log(orase); //sterge toate elemente de la 1 si le inlocuieste cu 'Constanta'
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>JAVASCRIPT</h1>
+
+</body>
+
+</html>

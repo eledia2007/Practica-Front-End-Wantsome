@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    <script>
+function numeFunction () {
+    console.log('You called me');
+}
+numeFunction();
+
+
+function sumaNumerelor (a, b){
+    return a+b;
+}
+console.log(sumaNumerelor(4,5));
+
+//named functions
+
+function showMessage (text) {
+    console.log(text);
+}
+showMessage('Hello');
+
+//functions expressions
+
+var  myFunction = function(a, body){
+    return a*b;
+}
+console.log(myFunction(3, 4));
+
+//functii anonime
+
+var anonymous = function (){
+    console.log('Hi');
+}
+anonymous();
+
+//immediatly invoked function expression
+
+(function (){
+    var message = 'I can call myself');
+    console.log(message);
+})(); //se executa singura cu paranteze () la sfarsit
+
+    </script>
+</head>
+
+<body>
+
+    <h1>JAVASCRIPT</h1>
+
+</body>
+
+</html>
