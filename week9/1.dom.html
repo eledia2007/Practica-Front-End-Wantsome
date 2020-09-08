@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>JavaS</title>
+    <meta charset="UTF-8">
+    </script>
+</head>
+
+<body>
+
+    <h1>DOM</h1>
+    <button type = "button" onclick="changeBg()">Change Background</button>
+    
+    <h1 id="my-title">This is my title</h1>
+    <button type = "button" onclick="changeTitBg()">Change Title Bg</button>
+
+    <p class = 'my-text'>Text 1 </p>
+    <p class = 'my-text'>Text 2 </p>
+    <p class = 'my-text'>Text 3 </p>
+    <button type="button" onclick="changeTextsBg()"> Change Texts</button>
+
+
+    <h2 id='today-status'>Saturday</h2>
+    <button type="button" onclick="useQuerySelector()"> Use Query</button>
+    
+   
+    <p class = 'new-text'>Text new1 </p>
+    <p class = 'new-text'>Text new2 </p>
+    <p class = 'new-text'>Text new3 </p>
+    <button type="button" onclick="useQueryAll()"> Change Texts</button>
+
+
+   <section>This is my section</section>
+   <section>This is my section</section>
+   <article>This is my article</article>
+   <article>This is my article</article>
+   <button type="button" onclick="useQueryAllByTags()"> Use Query All Bt Tags</button>
+    
+    <script>
+
+    const changeBg = () => {
+    document.body.style.backgroundColor = 'green';
+}
+
+const changeTitBg = () => {
+    const h1 = document.getElementById('my-title');
+    h1.style.backgroundColor = 'red';
+    h1.style.color ='white';
+    console.log(h1);
+    h1.innerText = 'Title has just changed';
+}
+
+const changeTextsBg = () => {
+    const texts = document.getElementsByClassName('my-text');
+    console.log(texts);
+    texts[0].style.backgroundColor='pink';
+    texts[1].style.backgroundColor='red';
+    // for (let i=0; i<
+}
+
+const useQuerySelector = () => {
+   const element = document.querySelector('#today-status');
+   element.style.backgroundColor = 'blue';
+}
+
+const useQueryAll = () => {
+   const elements = document.querySelectorAll('.new-text');
+   for (let i=0; i<elements.length; i++){
+       elements[i].style.color = 'blue';
+       elements[i].innerText = 'TExt changed';
+   }
+}
+
+const useQueryAllByTags = () => {
+    const elements = document.querySelectorAll('section, artcile');
+    for (let i=0; i<elements.length; i++){
+       elements[i].style.color = 'yellow';  
+
+    }
+const elems = document.getElementsByTagName('section');
+elems[0].style.color = 'lime';
+}
+    </script>
+</body>
+
+</html>

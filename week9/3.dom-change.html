@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dom Change</title>
+    <meta charset="UTF-8">
+    </script>
+</head>
+
+<body>
+   <p>This is element</p>
+
+  <ul>
+      <li>banane</li>
+      <li>struguri</li>
+  </ul>
+   
+    
+    <script>
+//adaugare paragraf--------------------------------------------
+       const paragraph = document.createElement('p');
+       console.log(paragraph);
+       paragraph.textContent = 'Hello!';
+       console.log(paragraph);
+       paragraph.innerHTML = 'Hello second time';
+       console.log(paragraph);
+//---------------------------------------------------------------
+//adauga elemente la lista
+
+    const list = document.querySelector('ul');
+    const newListItem = document.createElement('li');
+    newListItem.textContent = 'portocala';
+
+    console.log(newListItem);
+     list.appendChild(newListItem);
+
+     const listItem2 = document.createElement('li');
+     listItem2.textContent = 'mere';
+
+     //list.insertBefore(listItem2, list.firstChild);
+        //primul parametru e ceea ce vrem sa adaugam , al doilea parametru pozitia unde vrem sa adaugam
+
+     list.insertBefore(listItem2, list.firstElementChild.nextElementSibling);   
+//------------------------------------------------------------------------------------
+//modify list item (inlocuiste pozitia care o vrem noi)
+
+const modifiedItem = document.createElement('li');
+modifiedItem.textContent = 'Un alt fruct';
+list.replaceChild(modifiedItem, list.children[0]);
+   
+
+//------------------------------------------------------------------------------
+//remove child (sterge pozitia care o dorim)
+list.removeChild(list.children[0]);
+list.removeChild(list.lastChild);
+
+   
+   
+   </script>
+</body>
+
+</html>

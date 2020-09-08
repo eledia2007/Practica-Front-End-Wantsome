@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dom Change</title>
+    <meta charset="UTF-8">
+    </script>
+</head>
+
+<body>
+   
+    <h2>Second Image</h2>
+    <img alt='duck' , src="https://m.media-amazon.com/images/S/aplus-media/vc/822d10c5-02aa-4a9c-b3d6-b634dac68c3d._CR0,0,3000,3000_PT0_SX300__.jpg" with='450px' height="auto">
+   
+    
+    <script>
+        const image = document.querySelector('img');
+        console.log(image.hasAttribute('src'));//returneaza true/false daca are  sau nu src
+        console.log(image.getAttribute('src'));//returneaza tipul atributului
+       // image.removeAttribute('alt');//sterge atributul 'alt'
+  
+     setTimeout(() => image.setAttribute('src', 'https://lilalu-shop.com/media/image/74/66/db/lilalu-quietscheente-braut-bride-rubber-duck-F.png'),500);
+       //schimba imaginea
+           
+      const text = document.querySelector('h2');
+      text.setAttribute('style', 'font-size:40px'); 
+   
+   </script>
+</body>
+
+</html>

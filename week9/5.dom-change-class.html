@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Dom Change Classes</title>
+    <meta charset="UTF-8">
+    </script>
+</head>
+<style>
+    .active {
+        border: 3px solid greenyellow;
+    }
+    .alert {
+        border: 3px solid red;
+    }
+    .hidden {
+        display: none;
+    }
+    div {
+        border: 3px solid grey;
+        padding:15px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+   <div>Div #1</div>
+   <div class="active">Div #2</div>
+   <button onclick="toggleClass()">Toggle a class</button>
+
+    
+    <script>
+      
+      const div = document.querySelector('div');//selecteaza doar pe primul
+      div.className = 'alert';//modificam clasa
+
+      const secondDiv = document.querySelector('.active');
+
+      const toggleClass = () => {
+            //secondDiv.classList.toggle('hidden');
+            secondDiv.classList.replace('active','alert');
+      }
+
+  </script>
+</body>
+
+</html>
