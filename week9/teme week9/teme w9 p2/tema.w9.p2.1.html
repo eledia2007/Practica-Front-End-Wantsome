@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Master the DOM!</title>
+</head>
+<body>
+  <h1>Master the DOM!</h1>
+  <div id="test">I'm an ID</div>
+  <div class="test">I'm a class</div>
+  <div class="test">I'm another class</div>
+  <section>I'm a tag</section>
+  <section>I'm another tag</section>
+  <div id="test-query">Use a query selector</div>
+  <div class="test-query-all">Use query selector ALL</div>
+  <div class="test-query-all">Use query selector ALL</div>
+
+  <script>
+
+//Selectati fiecare element cu metodele ajutatoare
+// primul dupa id - getElementById
+//al doilea si al 3lea cu getElementsByClassName
+//cele 2 section cu getElementByTagName
+//etc
+// La fiecare selectie vom schimba background color-ul cu o culoare diferita pentru fiecare metoda
+const elemsById = document.getElementById('test');
+elemsById.style.backgroundColor ='red';
+const elemsByClass1 = document.getElementsByClassName('test');
+elemsByClass1[0].style.backgroundColor = 'blue';
+elemsByClass1[1].style.backgroundColor = 'green';
+const elemsByTagNm = document.getElementsByTagName('section');
+elemsByTagNm[0].style.backgroundColor = 'orange';
+elemsByTagNm[1].style.backgroundColor = 'yellow';
+const elemsById2 = document.querySelector('#test-query');
+elemsById2.style.backgroundColor = 'pink';
+const elemsByClass2 = document.querySelectorAll('.test-query-all');
+elemsByClass2[0].style.backgroundColor = 'grey';
+elemsByClass2[1].style.backgroundColor = 'lightgreen';
+
+
+
+
+
+  </script>
+</body>
+</html>

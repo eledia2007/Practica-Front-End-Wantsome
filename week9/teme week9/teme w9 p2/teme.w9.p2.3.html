@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book List</title>
+</head>
+
+<body>
+    <h1>Book list</h1>
+
+    <script>
+
+ // Creati o pagina web care are un h1 cu "Book List"
+// adugati un script style unde sa tinem js-ul
+//Iterati fiecare carte si pentru fiecare creati un p care sa contina titlul si autorul si faceti append in pagina noastra
+
+        const books = [
+            {
+                title: 'The Power of Habit',
+                author: 'Charles Duhigg',
+                read: true
+            },
+            {
+                title: 'Mindset: The New Psychology of Success',
+                author: 'Carol S. Dweck',
+                read: false
+            }];
+    
+    const newItem1 = document.createElement('p');
+    newItem1.textContent = books[0].title +' - '+ books[0].author;
+    document.getElementsByTagName('body')[0].appendChild(newItem1);
+    const newItem2 = document.createElement('p');
+    newItem2.textContent = books[1].title +' - '+ books[1].author;
+    document.getElementsByTagName('body')[0].appendChild(newItem2);
+//-------------------------------------------------------------------
+//BONUS: folositi ul si li pentru a face display la carti
+
+const createUl = document.createElement("ul"); 
+document.getElementsByTagName("body")[0].appendChild(createUl); 
+const createLi1 = document.createElement("li");     
+createLi1.textContent = books[0].title;     
+createUl.appendChild(createLi1);                              
+const createLi2 = document.createElement("li");     
+createLi2.textContent = books[1].title;     
+createUl.appendChild(createLi2); 
+//------------------------------------------------------------------
+//BONUS: adaugati o proprietate pentru fiecare carte cu URL de la coverul cartii si adaugati un element img pentru fiecare 
+//(nu uitati sa adaugati img-ul si pe obiectul cartii - acolo va fi si poza)
+
+const getObj = document.getElementById('books');
+books[0]["coverImg"] = "https://charlesduhigg.com/wp-content/uploads/2014/01/Power-of-Habit-TP_nospine1.jpg";
+books[1]["coverImg"] = "https://www.booktopia.com.au/http_coversbooktopiacomau/big/9780345472328/0000/mindset.jpg";
+
+const insertImg1 = document.createElement("img");
+insertImg1.src = books[0].coverImg;
+document.getElementsByTagName('body')[0].appendChild(insertImg1);
+const insertImg2 = document.createElement("img");
+insertImg2.src = books[1].coverImg;
+document.getElementsByTagName('body')[0].appendChild(insertImg2);
+//------------------------------------------------------------------  
+
+    </script>
+</body>
+
+</html>
+
+

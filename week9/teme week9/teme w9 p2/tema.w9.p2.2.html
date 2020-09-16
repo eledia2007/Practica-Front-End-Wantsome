@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Despre mine</title>
+</head>
+
+<body>
+  <h1>Despre mine</h1>
+
+  <ul>
+    <li>Nume: <span id="name"></span>
+    <li>Bautura Favorita: <span id="fav-drink"></span>
+    <li>Locul nasterii: <span id="born-place"></span>
+  </ul>
+
+
+  <script>
+
+    // Adaugati un tag script la final
+    const listAddLast = document.querySelector('ul');
+    const newItem = document.createElement('li');
+    newItem.textContent = 'Adresa:';
+    listAddLast.appendChild(newItem);
+
+    // Schimbati stilul body-ului sa aiba font-family "Arial, sans-serif"
+    const bodyStyleChange = document.querySelector('body');
+    bodyStyleChange.setAttribute('style', 'font-family:Arial, sans-serif');
+
+    // Schimbati fiecare span(name, fav-drink, born-place) cu informatiile despre voi
+    const addInfoName = document.getElementById('name');
+    addInfoName.innerText = ' Ion Popescu';
+    const addInfoDrink = document.getElementById('fav-drink');
+    addInfoDrink.innerText = ' Limonada';
+    const addInfoPlace = document.getElementById('born-place');
+    addInfoPlace.innerText = ' Earth';
+
+    // Iterati prin fiecare "li" si puneti clasa "listitem". 
+
+    const ul = document.getElementsByTagName('ul')[0];
+    const firstElement = ul.firstElementChild;
+    firstElement.className = 'listitem';
+    const secondElement = firstElement.nextElementSibling;
+    secondElement.className = 'listitem';
+    const thirdElement = secondElement.nextElementSibling;
+    thirdElement.className = 'listitem';
+    const lastElement = thirdElement.nextElementSibling;
+    lastElement.className = 'listitem';
+
+    //Adaugati un tag style(in head) care seteaza o regula pentru .listitem sa aiba culoarea rosie
+
+      const css = document.createElement('style');
+      css.type = 'text/css';
+      const styles = '.listitem { color: red }';
+      css.appendChild(document.createTextNode(styles));
+      document.getElementsByTagName("head")[0].appendChild(css);
+
+// Creati un element img si setati atributul src sa aiba o poza cu voi sau ceva random de pe net. 
+//Puneti acest element(append) la pagina noastra
+
+const insertImg = document.createElement("img");
+insertImg.src = "https://www.smallbizgenius.net/wp-content/uploads/2019/11/smallbizgenius_favicon.png";
+document.getElementsByTagName('body')[0].appendChild(insertImg);
+ 
+  </script>
+</body>
+
+</html>
