@@ -1,0 +1,22 @@
+#contain {
+    margin: auto;
+    width: 400px;
+    border: black solid 2px;
+    padding: 40px;
+    box-shadow: 3px 3px 3px 3px gray;
+    
+}
+
+input {
+    background-color: rgb(231, 227, 227);
+    border-color: lightgrey;
+}
+input[type="email"], input[type="tel"], input[type="text"], input[type="submit"]{
+    width: 100%;
+    height: 30px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+}
